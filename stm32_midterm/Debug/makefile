@@ -64,8 +64,8 @@ all: main-build
 main-build: mid_term.elf secondary-outputs
 
 # Tool invocations
-mid_term.elf: $(OBJS) $(USER_OBJS) E:\BK\ Subjects\Nam_3_ki_1\Vi_xu_ly-Dieu_khien\git_Lab\mid_term\STM32F103C6UX_FLASH.ld makefile objects.list $(OPTIONAL_TOOL_DEPS)
-	arm-none-eabi-gcc -o "mid_term.elf" @"objects.list" $(USER_OBJS) $(LIBS) -mcpu=cortex-m3 -T"E:\BK Subjects\Nam_3_ki_1\Vi_xu_ly-Dieu_khien\git_Lab\mid_term\STM32F103C6UX_FLASH.ld" --specs=nosys.specs -Wl,-Map="mid_term.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+mid_term.elf: $(OBJS) $(USER_OBJS) E:\BK\ Subjects\Nam_3_ki_1\Vi_xu_ly-Dieu_khien\midterm\stm32_midterm\STM32F103C6UX_FLASH.ld makefile objects.list $(OPTIONAL_TOOL_DEPS)
+	arm-none-eabi-gcc -o "mid_term.elf" @"objects.list" $(USER_OBJS) $(LIBS) -mcpu=cortex-m3 -T"E:\BK Subjects\Nam_3_ki_1\Vi_xu_ly-Dieu_khien\midterm\stm32_midterm\STM32F103C6UX_FLASH.ld" --specs=nosys.specs -Wl,-Map="mid_term.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
 	@echo 'Finished building target: $@'
 	@echo ' '
 

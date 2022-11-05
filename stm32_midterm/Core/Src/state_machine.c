@@ -37,7 +37,7 @@ void modifyCounter(){
 	}
 }
 
-void normalPressed() {
+void fsm_simple_buttons_run() {
 	switch (status) {
 		case NORMAL_PRESS:
 			if(isButton1Pressed() == 1){
@@ -132,6 +132,7 @@ void normalPressed() {
 				display7SEG(counter);
 			}
 			if(counter < 0){
+				initState();
 				counter = 0;
 			}
 //			change into normal state

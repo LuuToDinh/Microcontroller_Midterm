@@ -105,7 +105,7 @@ int main(void)
 
     /* USER CODE BEGIN 3 */
 	  ledBlinky();
-	  normalPressed();
+	  fsm_simple_buttons_run();
   }
   /* USER CODE END 3 */
 }

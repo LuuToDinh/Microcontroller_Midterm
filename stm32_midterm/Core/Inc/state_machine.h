@@ -13,7 +13,7 @@
 
 void initState();
 void modifyCounter();
-void normalPressed();
+void fsm_simple_buttons_run();
 void ledBlinky();
 
 #endif /* INC_STATE_MACHINE_H_ */
