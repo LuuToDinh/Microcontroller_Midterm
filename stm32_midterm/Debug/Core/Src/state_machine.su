@@ -1,0 +1,4 @@
+state_machine.c:11:6:initState	8	static
+state_machine.c:24:6:ledBlinky	8	static
+state_machine.c:31:6:modifyCounter	4	static
+state_machine.c:40:6:normalPressed	8	static

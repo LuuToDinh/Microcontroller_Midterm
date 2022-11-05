@@ -1,0 +1,4 @@
+normal_press.c:11:6:initState	8	static
+normal_press.c:24:6:ledBlinky	8	static
+normal_press.c:31:6:modifyCounter	4	static
+normal_press.c:40:6:normalPressed	8	static
